@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: url(../images/extra/animated.gif);
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Styling SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FA4B37;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DF2771; 
+}
+
+/*NAVIGATION BAR*/
+.nav
+{
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 2%;
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.nav li, a, button
+{
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav ul li img {
+	width: 20px;
+	margin-right: 10px;
+	transform: translateY(5px);
+	padding-top: 5px;
+}
+
+.nav ul li 
+{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav ul li a
+{
+	transition: all 0.3s ease 0s;
+}
+
+.nav ul li a:hover
+{
+	color: #FA4B37;
+}
+
+.nav button
+{
+	padding: 9px 25px;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+#srchbtn {
+	padding: 9px 20px;
+}
+#srchbtn img {
+	width: 15px;
+	filter: brightness(100);
+}
+
+.nav button:hover
+{
+	opacity: .9;
+}
+.nav .search
+{
+	float: right;
+}
+.nav .search .srch
+{
+	font-size: 17px;
+	width: 300px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #FA4B37;
+	padding: 9px;
+}
+
+.nav .search button
+{
+	margin-right: 5px;
+	float: right;
+	margin-left: 10px;
+}
+.nav .switch-tab {
+	cursor: pointer;
+	visibility: hidden;
+}
+.nav .switch-tab img {
+	width: 20px;
+}
+.nav .check-box {
+	cursor: pointer;
+	visibility: hidden;
+}
+
+/*TITLE*/
+.title {
+	margin-top: 18%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+.title span{
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	/*color: #2E3D49;*/
+	color: #fff;
+}
+.title .shortdesc {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #2E3D49;
+	margin-bottom: 50px;
+	text-align: center;
+	/*display: none;*/
+}
+
+.title button {
+	padding: 20px 2%;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background: #DF2771;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+.title button:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/*PANEL*/
+.panel {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}
+/*Different Topics Container*/
+.left-side {
+	background: #FFF;
+	height: 100%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.7),
+					0 0 30px rgba(0,0,0,0.5);
+}
+
+/*Google Form Container*/
+.right-side {
+	background: #fff;
+	height: 100%;
+	width: 75%;
+}
+.left-side ul {
+	margin: 50px;
+	margin-top: 150px;
+}
+.left-side li {
+	list-style-type: none;
+	cursor: pointer;
+	color: #FA4B37;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.left-side li:hover {
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 900;
+	transition: .3s ease-in-out;
+}
+
+#quiz-container {
+	margin-top: 90px;
+	width: 100%;
+	height: 100%;
+}
+
+.quiz-frame {
+	width: 100%;
+	height: 95vh;
+	border: none;
+}
+.main-frame {
+	background: url(../images/extra/quiz.jpg);
+	background-size: cover;
+}
+.main-frame p {
+	font-size: 5em;
+	font-weight: 900;
+	color: #2E3D49;
+}
+
+
+/*For Responsive Website*/
+@media screen and (max-width: 1366px) {
+	.search {
+		display: none;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.nav ul, .nav .search {
+		display: none;
+	}
+	.nav #learned-logo {
+		transition: 1s ease;
+		margin-left: 40%;
+		transform: scale(1.5);
+	}
+	.nav ul li{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.nav .switch-tab {
+		visibility: visible;
+	}
+	.nav .check-box {
+		visibility: visible;
+	}
+	.search {
+		visibility: visible;
+		margin: 30px;
+		margin-top: 0px;
+	}
+}

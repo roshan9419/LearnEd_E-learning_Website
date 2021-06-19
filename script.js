@@ -32,11 +32,12 @@ function switchTAB() {
 	var x = document.getElementById("list-switch");
 	if(i%2 == 0) {
 		document.getElementById("list-switch").style= "display: grid; height: 50vh; margin-left: 5%;";
-		document.getElementById("search-switch").style= "display: block; margin-left: 5%;"; i++;
+		document.getElementById("search-switch").style= "display: block; margin-left: 5%;";
 	}else {
 		document.getElementById("list-switch").style= "display: none;";
-		document.getElementById("search-switch").style= "display: none;"; i++;
+		document.getElementById("search-switch").style= "display: none;";
 	}
+	i++;
 }
 
 // For LOGIN
@@ -159,10 +160,9 @@ function sideMenu(side) {
   var menu = document.getElementById('side-menu');
   if(side==0) {
     menu.style = 'transform: translateX(0vh); position:fixed;';
-    side++;
   }
   else {
     menu.style = 'transform: translateX(-100%);';
-    side++;
   }
+  side++;
 }

@@ -292,28 +292,12 @@ a, button {
 
 /*Title*/
 .title {
-	/* margin-top: 160px; */
+	 margin-top: 0px; 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	text-align: center;
 	color: #2E3D49;
 }
-
-/* FEATURES */
-/* .features {
-	display: flex;
-	background: #0066ff;
-	justify-content: center
-}
-.features ul li {
-	list-style: none;
-	position: relative;
-	transition-duration: 4s;
-	animation-name: circle;
-}
-.features ul li img {
-	width: 50px;
-} */
 
 /*ABOUT*/
 .about-content {
@@ -418,23 +402,16 @@ a, button {
 					0 0 10px rgba(0,0,0,0.3);
 }
 .card:nth-child(1){
-	border-top: 5px solid red;
-}
-.card:nth-child(2){
 	border-top: 5px solid green;
 }
-.card:nth-child(3){
+.card:nth-child(2){
 	border-top: 5px solid blue;
 }
 .card:nth-child(1):hover {
-	box-shadow: inset 0px 0px 10px rgba(255,0,0,0.5),
-				1px 1px 30px rgba(255,0,0,0.5);
-}
-.card:nth-child(2):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
 				1px 1px 30px rgba(0,255,0,0.5);
 }
-.card:nth-child(3):hover {
+.card:nth-child(2):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
 				1px 1px 30px rgba(0,0,255,0.5);
 }
@@ -537,68 +514,7 @@ a, button {
 	box-shadow: 0 0 50px rgba(255,255,255,0.8);
 	transform: translateY(-10px);
 }
-/*
-.service-swipe {
-	height: 100vh;
-}
-.service-swipe .back {
-	width: 100%;
-	height: 75vh;
-	position: absolute;
-	z-index: -10;
-	transform: translateY(80px);
-}
-.service-container {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 0;
-}
-.service-container .left-side {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-.service-container .right-side {
-	display: flex;
-	justify-content: center;
-}
-.service-container .right-side img{
-	height: auto;
-	width: 800px;
-	transition: all 1s;
-	border-radius: 5px;
-	display: none;
-	box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
-}
-#img1 {
-	display: block;
-}
-.left-side ul {
-	margin-top: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.left-side ul li {
-	list-style: none;
-	display: inline-block;
-	transition: .5s;
-}
-.left-side ul li:hover {
-	transform: translateY(-5px);
-}
-.left-side ul li a {
-	text-decoration: none;
-	padding: 30px 50px;
-	color: #fff;
-	transition: .5s;
-	background: #DF2771;
-}
-.left-side ul li:nth-child(1) a{
-	background: #E5E8EF;
-	color: #DF2771;
-}*/
+
 /*Contact Us Section*/
 .csec {
 	background: linear-gradient(to right, #FA4B37, #DF2771);
@@ -971,7 +887,7 @@ footer .btn:hover {
 		width: 90%;
 	}
 	.title {
-		margin-top: 160px;
+		margin-top: 0px;
 	}
 	
 }

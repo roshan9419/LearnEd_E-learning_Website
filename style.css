@@ -454,15 +454,11 @@ a, button {
 	margin-left: 90px;
 	align-self: center;
 }
-.btn-bhanu:hover {
-	background: rgba(255,0,0,0.5);
-	color: #fff;
-}
 .btn-roshan:hover {
 	background: rgba(0,255,0,0.7);
 	color: #fff;
 }
-.btn-akhil:hover {
+.btn-roshan2:hover {
 	background: rgba(0,0,255,0.5);
 	color: #fff;
 }

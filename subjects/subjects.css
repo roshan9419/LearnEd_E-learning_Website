@@ -48,7 +48,7 @@ body {
 	float: left;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 13px;
 	color: #2E3D49;
 	display: block;
 	text-decoration: none;
@@ -107,7 +107,7 @@ body {
 }
 .nav .search .srch
 {
-	font-size: 17px;
+	font-size: 13px;
 	width: 300px;
 	border: none;
 	outline: none;

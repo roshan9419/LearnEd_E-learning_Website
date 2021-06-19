@@ -11,7 +11,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background: url(../images/extra/animated.gif);
+	background: url(../images/extra/b1.jpg);
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -49,7 +49,7 @@ body {
 	float: left;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 13px;
 	color: #2E3D49;
 	display: block;
 	text-decoration: none;
@@ -109,7 +109,7 @@ body {
 }
 .nav .search .srch
 {
-	font-size: 17px;
+	font-size: 13px;
 	width: 300px;
 	border: none;
 	outline: none;
@@ -152,7 +152,7 @@ body {
 .title .shortdesc {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	color: #2E3D49;
+	color: #efefef;
 	margin-bottom: 50px;
 	text-align: center;
 	/*display: none;*/
@@ -216,7 +216,7 @@ body {
 }
 
 #quiz-container {
-	margin-top: 90px;
+	margin-top: 80px;
 	width: 100%;
 	height: 100%;
 }
@@ -229,6 +229,7 @@ body {
 .main-frame {
 	background: url(../images/extra/quiz.jpg);
 	background-size: cover;
+	background-position: center;
 }
 .main-frame p {
 	font-size: 5em;
